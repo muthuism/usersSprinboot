@@ -1,0 +1,39 @@
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://mysqldb.cpee55yvut04.us-east-2.rds.amazonaws.com:3306/root?useSSL=false 
+    username: root
+    password: root1234
+  jpa:  
+    show-sql: true
+    properties:
+       dialect : org.hibernate.dialect.MySQL5Dialect
+    hibernate:
+      ddl-auto: none
+  application:
+    name: user-service
+
+
+      
+    
+    
+    
+server:
+  servlet:
+    context-path: /user
+  port: 8081  
+    
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8070/eureka/
+  instance:
+    hostname: localhost
+    
+    
+    
+    
+    
+       

@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/appbook?useSSL=false 
+    username: "root" 
+    password: "root"
+  jpa:  
+    show-sql: true
+    properties:
+       dialect : org.hibernate.dialect.MySQL5Dialect
+    hibernate:
+      ddl-auto: none
+
+
+      
+    
+    
+    
+server:
+ port: 7070
+ servlet:
+    context-path: "/appbook" 
+    
+       
